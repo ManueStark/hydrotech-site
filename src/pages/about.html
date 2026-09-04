@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — Hydrotech Africa</title>
+  <meta name="description" content="Hydrotech Africa, entreprise ivoirienne d'hydraulique, construction et énergie solaire, intervient en milieu rural depuis 2020.">
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+  <style>
+    body { font-family: 'Work Sans', sans-serif; }
+    .page-hero-overlay { background: linear-gradient(135deg, rgba(0,40,80,0.88), rgba(0,102,153,0.72)); }
+  </style>
+</head>
+<body class="w-full min-h-screen bg-white text-slate-800">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Hydrotech Africa - Accueil">
+        <img src="assets/images/logo.jpg" alt="Logo Hydrotech Africa" class="h-12 w-12 rounded-full object-cover">
+        <span class="font-extrabold text-[#003366] leading-tight text-sm md:text-base">HYDROTECH<br class="hidden md:block"> AFRICA</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+       <a href="index.html" class="text-sm font-medium hover:text-cyan-700 transition">Accueil</a>
+        <a href="services.html" class="text-sm font-medium hover:text-cyan-700 transition">Nos services</a>
+        <a href="portfolio.html" class="text-sm font-medium hover:text-cyan-700 transition">Nos réalisations</a>
+        <a href="about.html" class="text-sm font-medium hover:text-cyan-700">À propos</a>
+        <a href="contact.html" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Nous contacter</a>
+      </div>
+
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Ouvrir le menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden flex-col bg-white border-t px-6 py-4 gap-4">
+      <a href="index.html" class="text-sm font-medium">Accueil</a>
+      <a href="services.html" class="text-sm font-medium">Nos services</a>
+      <a href="portfolio.html" class="text-sm font-medium">Nos réalisations</a>
+      <a href="about.html" class="text-sm font-semibold text-cyan-700">À propos</a>
+      <a href="contact.html" class="text-sm font-medium">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page hero -->
+    <section class="relative pt-40 pb-20 px-6 page-hero-overlay">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-white text-3xl md:text-5xl font-extrabold mb-4">À propos de nous</h1>
+        <p class="text-white/90 text-lg max-w-2xl mx-auto">
+          Une entreprise ivoirienne engagée pour l'eau, l'habitat et l'énergie en milieu rural.
+        </p>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="py-20 px-6 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <p class="text-cyan-700 font-semibold mb-3">Depuis 2020</p>
+        <h2 class="font-bold text-2xl md:text-3xl text-[#003366] mb-6">Hydraulique, construction et énergie, au plus près du terrain</h2>
+        <div class="space-y-5 text-slate-600 leading-relaxed">
+          <p>
+            Hydrotech Africa est une entreprise ivoirienne active dans trois grands domaines : l'hydraulique, la construction et les travaux publics, ainsi que l'énergie et l'environnement. Basée à Abidjan, elle intervient depuis 2020 principalement en milieu rural, au plus près des communautés qui ont le plus besoin d'un accès fiable à l'eau et à l'énergie.
+          </p>
+          <p>
+            De la réalisation de forages et de châteaux d'eau à la construction de bâtiments et d'infrastructures publiques, en passant par l'installation de systèmes solaires, notre équipe accompagne chaque projet de l'étude jusqu'à la mise en service, avec un souci constant de qualité et de durabilité.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domaines -->
+    <section class="py-20 px-6 bg-[#f4f9fb]">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow p-8 text-center">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-cyan-50 flex items-center justify-center">
+            <i data-lucide="droplets" class="text-cyan-600"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-[#003366]">Hydraulique</h3>
+          <p class="text-sm text-slate-600">Forage, châteaux d'eau et réseaux de distribution d'eau potable.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-8 text-center">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-cyan-50 flex items-center justify-center">
+            <i data-lucide="hard-hat" class="text-cyan-600"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-[#003366]">Construction & travaux publics</h3>
+          <p class="text-sm text-slate-600">Bâtiments et infrastructures publiques, du gros œuvre à la finition.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-8 text-center">
+          <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-cyan-50 flex items-center justify-center">
+            <i data-lucide="sun" class="text-cyan-600"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-[#003366]">Énergie & environnement</h3>
+          <p class="text-sm text-slate-600">Installations solaires durables et solutions respectueuses de l'environnement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 px-6 bg-[#003366]">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-white font-bold text-2xl md:text-3xl mb-4">Envie de travailler avec nous ?</h2>
+        <p class="text-white/80 mb-8">Parlons de votre projet d'eau, de construction ou d'énergie solaire.</p>
+        <a href="contact.html" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition">
+          Contactez-nous
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#00203f] text-white/80 py-12 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.jpg" alt="Logo Hydrotech Africa" class="h-10 w-10 rounded-full object-cover">
+          <span class="font-extrabold text-white">HYDROTECH AFRICA</span>
+        </div>
+        <p class="text-sm">Hydraulique, construction et travaux publics, énergie et environnement.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Navigation</h4>
+        <ul class="space-y-2 text-sm">
+         <li><a href="index.html" class="hover:text-cyan-400 transition">Accueil</a></li>
+          <li><a href="services.html" class="hover:text-cyan-400 transition">Nos services</a></li>
+          <li><a href="portfolio.html" class="hover:text-cyan-400 transition">Réalisations</a></li>
+          <li><a href="about.html" class="hover:text-cyan-400 transition">À propos</a></li>
+          <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li>28 BP 1277 Abidjan 28, Rue Lorougnon Zikaï, Angré Djorobité, Abidjan</li>
+          <li><a href="tel:+2252722576543" class="hover:text-cyan-400 transition">+225 27 22 57 65 43</a></li>
+          <li><a href="tel:+2250710836283" class="hover:text-cyan-400 transition">+225 07 10 83 62 83</a></li>
+          <li><a href="mailto:hydrotechafrica.ci@gmail.com" class="hover:text-cyan-400 transition">hydrotechafrica.ci@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-white/60">© 2026 Hydrotech Africa. Tous droits réservés.</p>
+      <div class="flex items-center gap-3">
+        <a href="https://www.facebook.com/hydrotechafrica" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="facebook" style="width:16px;height:16px"></i></a>
+        <a href="https://www.instagram.com/hydrotechafrica/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="instagram" style="width:16px;height:16px"></i></a>
+        <a href="https://www.linkedin.com/company/hydrotech-africa" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="linkedin" style="width:16px;height:16px"></i></a>
+        <a href="https://www.youtube.com/channel/UCHJY5zuH6-m6kLQBoyODY4w" target="_blank" rel="noopener" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="youtube" style="width:16px;height:16px"></i></a>
+        <a href="https://wa.me/2250710836283" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="message-circle" style="width:16px;height:16px"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2250710836283" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] shadow-lg flex items-center justify-center transition">
+    <i data-lucide="message-circle" class="text-white" style="width:26px;height:26px"></i>
+  </a>
+
+  <script>
+    lucide.createIcons();
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  </script>
+</body>
+</html>

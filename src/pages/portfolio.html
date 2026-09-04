@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos réalisations — Hydrotech Africa</title>
+  <meta name="description" content="Références chantiers d'Hydrotech Africa : forages, châteaux d'eau, réseaux d'eau potable et travaux publics réalisés pour ONEP, SAPH, SGTI et d'autres clients en Côte d'Ivoire.">
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+  <style>
+    body { font-family: 'Work Sans', sans-serif; }
+    .page-hero-overlay { background: linear-gradient(135deg, rgba(0,40,80,0.88), rgba(0,102,153,0.72)); }
+    .domain-card.active { outline: 3px solid #06b6d4; outline-offset: 2px; }
+    tr.row-hidden { display: none; }
+  </style>
+</head>
+<body class="w-full min-h-screen bg-white text-slate-800">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Hydrotech Africa - Accueil">
+        <img src="/Users/mac/Desktop/neelcom/website/hydrotechafricaci-lab/src/assets/images/logo.jpg" alt="Logo Hydrotech Africa" class="h-12 w-12 rounded-full object-cover">
+        <span class="font-extrabold text-[#003366] leading-tight text-sm md:text-base">HYDROTECH<br class="hidden md:block"> AFRICA</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-medium hover:text-cyan-700 transition">Accueil</a>
+        <a href="services.html" class="text-sm font-medium hover:text-cyan-700 transition">Nos services</a>
+        <a href="portfolio.html" class="text-sm font-semibold text-cyan-700">Nos réalisations</a>
+        <a href="about.html" class="text-sm font-medium hover:text-cyan-700 transition">À propos</a>
+        <a href="contact.html" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Nous contacter</a>
+      </div>
+
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Ouvrir le menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden flex-col bg-white border-t px-6 py-4 gap-4">
+      <a href="index.html" class="text-sm font-medium">Accueil</a>
+      <a href="services.html" class="text-sm font-medium">Nos services</a>
+      <a href="portfolio.html" class="text-sm font-semibold text-cyan-700">Nos réalisations</a>
+      <a href="about.html" class="text-sm font-medium">À propos</a>
+      <a href="contact.html" class="text-sm font-medium">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page hero -->
+    <section class="relative pt-40 pb-20 px-6 page-hero-overlay">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-white text-3xl md:text-5xl font-extrabold mb-4">Nos réalisations</h1>
+        <p class="text-white/90 text-lg max-w-2xl mx-auto">
+          Depuis 2019, Hydrotech Africa réalise des chantiers d'hydraulique et de travaux publics pour des institutions et industriels en Côte d'Ivoire.
+        </p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="px-6 -mt-10 relative z-10">
+      <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-100 overflow-hidden">
+        <div class="p-6 text-center">
+          <p class="text-3xl font-extrabold text-[#003366]">17+</p>
+          <p class="text-xs text-slate-500 mt-1">Chantiers réalisés</p>
+        </div>
+        <div class="p-6 text-center">
+          <p class="text-3xl font-extrabold text-[#003366]">2019</p>
+          <p class="text-xs text-slate-500 mt-1">Premiers marchés</p>
+        </div>
+        <div class="p-6 text-center">
+          <p class="text-3xl font-extrabold text-[#003366]">7+</p>
+          <p class="text-xs text-slate-500 mt-1">Clients institutionnels & industriels</p>
+        </div>
+        <div class="p-6 text-center">
+          <p class="text-3xl font-extrabold text-[#003366]">40km+</p>
+          <p class="text-xs text-slate-500 mt-1">De conduites posées</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domaines cliquables -->
+    <section class="py-20 px-6 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-center font-bold text-2xl md:text-3xl text-[#003366] mb-3">Nos domaines d'intervention</h2>
+        <p class="text-center text-slate-600 max-w-2xl mx-auto mb-12">Cliquez sur une catégorie pour filtrer nos chantiers réalisés ci-dessous.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <button type="button" data-filter="forage" class="domain-card text-left rounded-2xl overflow-hidden shadow-lg bg-white group cursor-pointer">
+            <img src="assets/images/img-forage.avif" alt="Forage d'eau" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-4">
+              <p class="text-xs font-semibold text-cyan-600 uppercase tracking-wide mb-1">Hydraulique</p>
+              <h3 class="font-bold text-[#003366] text-sm">Forage</h3>
+            </div>
+          </button>
+
+          <button type="button" data-filter="chateau" class="domain-card text-left rounded-2xl overflow-hidden shadow-lg bg-white group cursor-pointer">
+            <img src="assets/images/img-chateau.avif" alt="Château d'eau" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-4">
+              <p class="text-xs font-semibold text-cyan-600 uppercase tracking-wide mb-1">Hydraulique</p>
+              <h3 class="font-bold text-[#003366] text-sm">Châteaux d'eau</h3>
+            </div>
+          </button>
+
+          <button type="button" data-filter="distribution" class="domain-card text-left rounded-2xl overflow-hidden shadow-lg bg-white group cursor-pointer">
+            <img src="assets/images/img-distribution.avif" alt="Réseau de distribution d'eau" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-4">
+              <p class="text-xs font-semibold text-cyan-600 uppercase tracking-wide mb-1">Hydraulique</p>
+              <h3 class="font-bold text-[#003366] text-sm">Distribution d'eau</h3>
+            </div>
+          </button>
+
+          <button type="button" data-filter="btp" class="domain-card text-left rounded-2xl overflow-hidden shadow-lg bg-white group cursor-pointer">
+            <img src="assets/images/img-btp.avif" alt="Bâtiment et travaux publics" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-4">
+              <p class="text-xs font-semibold text-cyan-600 uppercase tracking-wide mb-1">BTP</p>
+              <h3 class="font-bold text-[#003366] text-sm">Travaux publics</h3>
+            </div>
+          </button>
+
+          <button type="button" data-filter="energie" class="domain-card text-left rounded-2xl overflow-hidden shadow-lg bg-white group cursor-pointer">
+            <img src="assets/images/img-solaire.avif" alt="Installation solaire" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+            <div class="p-4">
+              <p class="text-xs font-semibold text-cyan-600 uppercase tracking-wide mb-1">Énergie</p>
+              <h3 class="font-bold text-[#003366] text-sm">Énergie solaire</h3>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Références chantiers -->
+    <section id="chantiers" class="py-20 px-6 bg-[#f4f9fb] scroll-mt-24">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+          <div>
+            <h2 class="font-bold text-2xl md:text-3xl text-[#003366]">Nos références chantiers</h2>
+            <p class="text-slate-600 mt-1">Une sélection de nos marchés réalisés et en cours, en propre ou en sous-traitance.</p>
+          </div>
+          <div id="filter-status" class="hidden items-center gap-2 bg-cyan-100 text-cyan-800 text-sm font-medium px-4 py-2 rounded-full">
+            <span id="filter-label"></span>
+            <button type="button" id="filter-reset" aria-label="Réinitialiser le filtre" class="hover:text-cyan-900">
+              <i data-lucide="x" style="width:14px;height:14px"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl shadow-lg border border-slate-100 bg-white">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-[#003366] text-white text-left">
+                <th class="px-5 py-4 font-semibold whitespace-nowrap">Période</th>
+                <th class="px-5 py-4 font-semibold">Localité</th>
+                <th class="px-5 py-4 font-semibold">Nature des travaux</th>
+                <th class="px-5 py-4 font-semibold whitespace-nowrap">Client</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr data-category="forage chateau" class="bg-cyan-50/50">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-cyan-700">2026 <span class="block text-xs font-normal text-slate-400">en cours</span></td>
+                <td class="px-5 py-4 font-medium">Sassandra</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation d'un forage d'exploitation et d'un réservoir</td>
+                <td class="px-5 py-4 text-slate-600">SAPH</td>
+              </tr>
+              <tr data-category="forage" class="bg-cyan-50/50">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-cyan-700">2026 <span class="block text-xs font-normal text-slate-400">en cours</span></td>
+                <td class="px-5 py-4 font-medium">Loeth</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation d'un forage d'exploitation et équipement en pompe électrique</td>
+                <td class="px-5 py-4 text-slate-600">SAPH</td>
+              </tr>
+              <tr data-category="forage" class="bg-cyan-50/50">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-cyan-700">2026 <span class="block text-xs font-normal text-slate-400">en cours</span></td>
+                <td class="px-5 py-4 font-medium">Goulia, Minignan</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation, équipement et raccordement d'un forage (sous-traitance)</td>
+                <td class="px-5 py-4 text-slate-600">Ivoire Panorama</td>
+              </tr>
+              <tr data-category="forage" class="bg-cyan-50/50">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-cyan-700">2026 <span class="block text-xs font-normal text-slate-400">en cours</span></td>
+                <td class="px-5 py-4 font-medium">Sokoro, Minignan</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation, équipement et raccordement d'un forage (sous-traitance)</td>
+                <td class="px-5 py-4 text-slate-600">Ivoire Panorama</td>
+              </tr>
+              <tr data-category="distribution">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2025</td>
+                <td class="px-5 py-4 font-medium">Tienko, Minignan — Lot 1</td>
+                <td class="px-5 py-4 text-slate-600">Renforcement de l'alimentation en eau potable</td>
+                <td class="px-5 py-4 text-slate-600">ONEP</td>
+              </tr>
+              <tr data-category="distribution">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2025</td>
+                <td class="px-5 py-4 font-medium">Tienko, Minignan — Lot 2</td>
+                <td class="px-5 py-4 text-slate-600">Renforcement de l'alimentation en eau potable</td>
+                <td class="px-5 py-4 text-slate-600">ONEP</td>
+              </tr>
+              <tr data-category="energie forage">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2023</td>
+                <td class="px-5 py-4 font-medium">Youhoulié, Dabou</td>
+                <td class="px-5 py-4 text-slate-600">Équipement d'un forage en pompe solaire hybride</td>
+                <td class="px-5 py-4 text-slate-600">SAPH</td>
+              </tr>
+              <tr data-category="forage chateau distribution">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2022 – 2024</td>
+                <td class="px-5 py-4 font-medium">Bingerville</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation et équipement de 3 forages, station de traitement (500 m³/h), réservoir semi-enterré de 1000 m³ et salle de reprise en béton armé</td>
+                <td class="px-5 py-4 text-slate-600">EKDS Nouvelle</td>
+              </tr>
+              <tr data-category="forage chateau">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2022 – 2023</td>
+                <td class="px-5 py-4 font-medium">Nouvel Ousrou, Dabou</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation d'un forage d'exploitation et d'un château d'eau</td>
+                <td class="px-5 py-4 text-slate-600">SAPH</td>
+              </tr>
+              <tr data-category="forage">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2022 – 2023</td>
+                <td class="px-5 py-4 font-medium">Rapides Grah (V2, V4, Village centre)</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation de trois forages d'exploitation</td>
+                <td class="px-5 py-4 text-slate-600">SAPH</td>
+              </tr>
+              <tr data-category="forage">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2022</td>
+                <td class="px-5 py-4 font-medium">Nigui Nanou, Dabou</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation d'un forage d'exploitation et équipement en pompe électrique</td>
+                <td class="px-5 py-4 text-slate-600">SAPH</td>
+              </tr>
+              <tr data-category="distribution btp">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2021</td>
+                <td class="px-5 py-4 font-medium">Agboville et localités environnantes</td>
+                <td class="px-5 py-4 text-slate-600">Fouille et pose de canalisation — renforcement de l'adduction en eau potable</td>
+                <td class="px-5 py-4 text-slate-600">CGC-CI</td>
+              </tr>
+              <tr data-category="distribution btp">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2021</td>
+                <td class="px-5 py-4 font-medium">Bondoukou</td>
+                <td class="px-5 py-4 text-slate-600">Pose de 5 000 ml de canalisation en béton armé (Ø400 à 1800) pour l'assainissement d'une usine de transformation coton/anacarde</td>
+                <td class="px-5 py-4 text-slate-600">SGTI</td>
+              </tr>
+              <tr data-category="forage">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2021</td>
+                <td class="px-5 py-4 font-medium">Bondoukou</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation de cinq forages d'exploitation</td>
+                <td class="px-5 py-4 text-slate-600">SOGEO-CI</td>
+              </tr>
+              <tr data-category="forage">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2020 – 2021</td>
+                <td class="px-5 py-4 font-medium">Nassian</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation, équipement et raccordement d'un forage</td>
+                <td class="px-5 py-4 text-slate-600">ONEP</td>
+              </tr>
+              <tr data-category="forage">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2020</td>
+                <td class="px-5 py-4 font-medium">Sanaferedougou</td>
+                <td class="px-5 py-4 text-slate-600">Réalisation, équipement et raccordement électrique d'un forage</td>
+                <td class="px-5 py-4 text-slate-600">—</td>
+              </tr>
+              <tr data-category="distribution btp">
+                <td class="px-5 py-4 whitespace-nowrap font-semibold text-[#003366]">2019 – 2021</td>
+                <td class="px-5 py-4 font-medium">Bondoukou</td>
+                <td class="px-5 py-4 text-slate-600">Projet AEP des villes de l'Est : pose de 40 km de conduites en fonte ductile Ø400 mm et pièces spéciales de raccordement</td>
+                <td class="px-5 py-4 text-slate-600">—</td>
+              </tr>
+            </tbody>
+          </table>
+          <p id="empty-state" class="hidden text-center text-sm text-slate-500 py-10">Aucun chantier de ce type pour le moment — <a href="services.html" class="text-cyan-700 font-semibold hover:underline">voir nos services</a>.</p>
+        </div>
+        <p class="text-xs text-slate-400 text-center mt-4">Liste non exhaustive de nos chantiers réalisés et en cours.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 px-6 bg-[#003366]">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-white font-bold text-2xl md:text-3xl mb-4">Votre projet pourrait être le prochain</h2>
+        <p class="text-white/80 mb-8">Parlons de vos besoins en eau, construction ou énergie solaire.</p>
+        <a href="contact.html" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition">
+          Contactez-nous
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#00203f] text-white/80 py-12 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/Users/mac/Desktop/neelcom/website/hydrotechafricaci-lab/src/assets/images/logo.jpg" alt="Logo Hydrotech Africa" class="h-10 w-10 rounded-full object-cover">
+          <span class="font-extrabold text-white">HYDROTECH AFRICA</span>
+        </div>
+        <p class="text-sm">Hydraulique, construction et travaux publics, énergie et environnement.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Navigation</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-cyan-400 transition">Accueil</a></li>
+          <li><a href="services.html" class="hover:text-cyan-400 transition">Nos services</a></li>
+          <li><a href="portfolio.html" class="hover:text-cyan-400 transition">Réalisations</a></li>
+          <li><a href="about.html" class="hover:text-cyan-400 transition">À propos</a></li>
+          <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li>28 BP 1277 Abidjan 28, Rue Lorougnon Zikaï, Angré Djorobité, Abidjan</li>
+          <li><a href="tel:+2252722576543" class="hover:text-cyan-400 transition">+225 27 22 57 65 43</a></li>
+          <li><a href="tel:+2250710836283" class="hover:text-cyan-400 transition">+225 07 10 83 62 83</a></li>
+          <li><a href="mailto:hydrotechafrica.ci@gmail.com" class="hover:text-cyan-400 transition">hydrotechafrica.ci@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-white/60">© 2026 Hydrotech Africa. Tous droits réservés.</p>
+      <div class="flex items-center gap-3">
+        <a href="https://www.facebook.com/hydrotechafrica" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="facebook" style="width:16px;height:16px"></i></a>
+        <a href="https://www.instagram.com/hydrotechafrica/" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="instagram" style="width:16px;height:16px"></i></a>
+        <a href="https://www.linkedin.com/company/hydrotech-africa" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="linkedin" style="width:16px;height:16px"></i></a>
+        <a href="https://www.youtube.com/channel/UCHJY5zuH6-m6kLQBoyODY4w" target="_blank" rel="noopener" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="youtube" style="width:16px;height:16px"></i></a>
+        <a href="https://wa.me/2250710836283" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-white/10 hover:bg-cyan-600 flex items-center justify-center transition"><i data-lucide="message-circle" style="width:16px;height:16px"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2250710836283" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] shadow-lg flex items-center justify-center transition">
+    <i data-lucide="message-circle" class="text-white" style="width:26px;height:26px"></i>
+  </a>
+
+  <script>
+    lucide.createIcons();
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    const cards = document.querySelectorAll('.domain-card');
+    const rows = document.querySelectorAll('#chantiers tbody tr');
+    const filterStatus = document.getElementById('filter-status');
+    const filterLabel = document.getElementById('filter-label');
+    const filterReset = document.getElementById('filter-reset');
+    const emptyState = document.getElementById('empty-state');
+    const labels = { forage: 'Forage', chateau: "Châteaux d'eau", distribution: "Distribution d'eau", btp: 'Travaux publics', energie: 'Énergie solaire' };
+
+    function applyFilter(key) {
+      let visibleCount = 0;
+      rows.forEach(row => {
+        const cats = (row.dataset.category || '').split(' ');
+        const show = !key || cats.includes(key);
+        row.classList.toggle('row-hidden', !show);
+        if (show) visibleCount++;
+      });
+      emptyState.classList.toggle('hidden', visibleCount !== 0);
+      cards.forEach(c => c.classList.toggle('active', c.dataset.filter === key));
+      if (key) {
+        filterLabel.textContent = labels[key] || key;
+        filterStatus.classList.remove('hidden');
+        filterStatus.classList.add('flex');
+      } else {
+        filterStatus.classList.add('hidden');
+        filterStatus.classList.remove('flex');
+      }
+    }
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const key = card.dataset.filter;
+        const isActive = card.classList.contains('active');
+        applyFilter(isActive ? null : key);
+        document.getElementById('chantiers').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    filterReset.addEventListener('click', () => applyFilter(null));
+  </script>
+</body>
+</html>
