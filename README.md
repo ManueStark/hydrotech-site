@@ -4,7 +4,7 @@ Bienvenue sur le dépôt du site web Hydrotech, votre plateforme d'innovation en
 
 ## 🌍 À propos
 
-Hydrotech est une entreprise dédiée à la fourniture de solutions technologiques avancées et durables pour les défis hydrauliques et énergétiques en Afrique. Notre site web présente nos services, réalisations et informations de contact.
+Hydrotech est une entreprise dédiée à la fourniture de solutions technologiques avancées et durables pour les défis hydrauliques et énergétiques en Afrique. Notre site web présente nos services, réalisations et informations decontact.
 
 ## 📋 Table des matières
 
@@ -44,7 +44,7 @@ yarn install
 
 ```
 hydrotech-website/
-├── src/                    # Code source
+├──                      # Code source
 │   ├── components/         # Composants réutilisables
 │   ├── pages/              # Pages principales
 │   ├── styles/             # Feuilles de style
@@ -125,11 +125,11 @@ Veuillez suivre les conventions de commit standardisées :
 - **LinkedIn** : [Neel Communication](https://linkedin.com/in/neelcommunication)
 - **Portfolio** : [Neel Communication](https://www.neelcommunication.com)
 
-## 📞 Contact
+## 📞contact
 
-Pour plus d'informations, veuillez nous contacter :
+Pour plus d'informations, veuillez nouscontacter :
 
-- **Email** : contact@hydrotech-africa.com
+- **Email** :contact@hydrotech-africa.com
 - **Website** : [www.hydrotech-africa.com](https://www.hydrotech-africa.com)
 - **LinkedIn** : [Hydrotech Africa](https://linkedin.com/company/hydrotech-africa)
 
